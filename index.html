@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo-MFS</title>
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
+    <style>
+        .outfit-font {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-800">
+    <section class="max-w-md mx-auto min-h-screen bg-gray-100">
+        <header class=" w-3/4 mx-auto">
+            <nav class="flex justify-center items-center ">
+                <div class="mt-52 w-9/12 mb-12 relative flex items-center justify-center">
+                    <img class="absolute mt-20 " src="assets/bg.png" alt="Background">
+                    <img class="w-20" src="assets/Group.png" alt="Logo">
+                </div>
+            </nav>
+        </header>
+        <form class="hero outfit-font">
+            <div class="card bg-base-100 shadow-2xl w-full max-w-sm ">
+                <div class="card-body ">
+                    <fieldset class="fieldset">
+                        <label class="fieldset-labeltext-black font-medium text-base">Account Number</label>
+                        <input value="01840913161" id="account-number" type="number" class="input focus:outline-none rounded-xl "
+                            placeholder="Type your number" required />
+                        <label class="fieldset-label text-black font-medium text-base">Pin</label>
+                        <input value="1234" id="pin-number" type="text" class="input focus:outline-none rounded-xl"
+                            placeholder="Enter 4 Digit Pin" required />
+                        <button  id="login-btn" class="btn btn-neutral mt-4 rounded-xl bg-[#0874F2] border-none text-base text-white">
+                            Login
+                        </button>
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- js -->
+     <script src="script/login.js"></script>
+</body>
+
+</html>
